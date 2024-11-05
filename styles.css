@@ -1,0 +1,148 @@
+@font-face {
+    font-family: pixelFont;
+    src: url("assets/font/Retro\ Gaming.ttf");
+}
+
+.header_img {
+    background-image: url("./assets/header_img.png");
+    height: 60px;
+    color: lavenderblush;
+}
+
+.menu {
+    background-color: #020061;
+    border: 8px solid transparent;
+    border-image: url("assets/gradient_panel.png") 4 stretch;
+    border-radius: 20px;
+
+    height: 32px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu_button {
+    font-family: pixelFont;
+    font-size: 16px;
+    color: lavenderblush;
+
+    background: none;
+    border: none;
+}
+
+.menu_button:hover {
+    color: plum;
+}
+
+button.menu_button {
+    height: 100%;
+}
+
+body {
+    background-image: url("./assets/background.png");
+    font-family: pixelFont;
+    font-size: 16px;
+    color: lavenderblush;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    color: plum;
+}
+
+.certification
+{
+    width: 40%;
+}
+
+.about_me {
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 800px;
+    height:400px;
+    text-align: left;
+    background-color: #020061;
+    border-radius: 20px;
+}
+
+.about_me_info {
+    display: flex;
+    justify-content: center;
+}
+
+.about_me_text {
+    margin-left: 10px;
+}
+
+.img_me {
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 256px;
+    height:256px;
+}
+
+.about_me_red {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img_icon {
+    width: 64px;
+    height:64px;
+}
+
+#borderimg {
+    border: 8px solid transparent;
+    border-image: url("assets/gradient_panel.png") 4 stretch;
+}
+
+footer {
+    background-color: #020061;
+    border: 8px solid transparent;
+    border-image: url("assets/gradient_panel.png") 4 stretch;
+    height: 128px;
+    border-radius: 20px;
+}
+
+.footer_message {
+    padding-top: 54px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_message a {
+    font-family: pixelFont;
+    font-size: 64;
+    text-align: center;
+    text-decoration: none;
+    color: lavenderblush;
+}
+
+
+.contact_me {
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+
+.projects {
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #020061;
+    border-radius: 20px;
+    width: 400px;
+    padding-bottom: 24px;
+}

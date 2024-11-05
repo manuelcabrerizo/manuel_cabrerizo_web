@@ -1,0 +1,51 @@
+root_node: {
+  dir: 1
+  window_node: {
+    active_window: 2
+    window_count: 1
+    window: {
+      id: 2
+      name: "Entities"
+      flags: 1
+    }
+  }
+  split_node: {
+    split_position: 157
+  }
+  root_node: {
+    dir: 2
+    window_node: {
+      active_window: 0
+      window_count: 1
+      window: {
+        id: 0
+        name: "Game"
+        flags: 2
+      }
+    }
+    split_node: {
+      split_position: 767
+    }
+    window_node: {
+      active_window: 1
+      window_count: 1
+      window: {
+        id: 1
+        name: "Tools"
+        flags: 1
+      }
+    }
+  }
+  split_node: {
+    split_position: 751
+  }
+  window_node: {
+    active_window: 3
+    window_count: 1
+    window: {
+      id: 3
+      name: "Components"
+      flags: 1
+    }
+  }
+}
