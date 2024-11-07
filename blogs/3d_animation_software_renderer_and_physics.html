@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/goblin.png">
     <link rel="stylesheet" href="../styles.css">
     <title>Manuel Cabrerizo</title>
 </head>
@@ -66,59 +67,58 @@
 
         <br><br>
 
-        <p>This project explores multiple advanced areas, acting as a testing ground for three main components:</p>
+        <p>This project delves into multiple advanced fields in 3D graphics, serving as a testing ground for three primary components: a custom software renderer, a 3D animation and interpolation system, and a physics simulation engine. Each of these components was built from the ground up, providing a comprehensive learning experience and resulting in a versatile toolset for handling complex 3D rendering, animation, and physics challenges.</p>
 
         <h3>Software Renderer</h3>
-
+        
         <p>
-            I developed a software renderer from scratch as an exercise in learning. Building it from the ground up
-            allowed
-            me to understand every step involved in rendering, from drawing triangles on the screen to eventually
-            animating
-            3D models.
+            The <strong>software renderer</strong> was developed entirely from scratch as an in-depth exercise in understanding the fundamentals of 3D graphics. By building this renderer from the ground up, I was able to grasp each crucial step in the rendering pipeline, from drawing basic geometric shapes to displaying fully animated 3D models. This experience highlighted the complexities of graphics programming and enabled me to optimize rendering processes.
         </p>
         <p>
             Key features of the renderer include:
         </p>
         <ul>
-            <li>Rendering triangles and animated models on the screen</li>
-            <li>Drawing lines and setting world, view, and projection matrices</li>
-            <li>Rendering both static and animated 3D models</li>
-            <li>Applying textures using UV coordinates</li>
-            <li>Clipping triangles outside the view frustum</li>
-            <li>Using AVX instructions for efficient triangle rasterization, painting 8 pixels at a time</li>
+            <li><strong>Rendering triangles and animated models:</strong> Enabling dynamic 3D visualizations on screen.</li>
+            <li><strong>Drawing lines and setting up transformation matrices:</strong> Essential for world, view, and projection transformations.</li>
+            <li><strong>Rendering both static and animated 3D models:</strong> Ensuring smooth transitions between key poses.</li>
+            <li><strong>Applying detailed textures using UV coordinates:</strong> Achieving realistic surfaces and lighting effects.</li>
+            <li><strong>Clipping triangles outside the view frustum:</strong> Optimizing rendering by culling objects outside of the camera's view.</li>
+            <li><strong>Utilizing AVX instructions:</strong> Efficient rasterization, painting multiple pixels at once for enhanced performance.</li>
         </ul>
-
+        
         <h3>3D Animation and Interpolation</h3>
         <p>
-            This project also includes a skeletal animation system, which interpolates between different poses of a
-            skeleton
-            to animate a 3D model. This allows smooth transitions between animations and brings models to life.
+            This project also includes a comprehensive <strong>skeletal animation system</strong>, which smoothly interpolates between different poses of a skeleton to animate 3D models. This feature enables lifelike transitions and movement, essential for adding realism to characters and animated objects. The system’s design allows for flexible integration of various animations, making it ideal for complex character animations.
         </p>
         <p>
-            Key features of the animation system:
+            Key features of the animation system include:
         </p>
         <ul>
-            <li>Animating complex 3D models</li>
-            <li>Blending multiple animations to create smooth, realistic transitions</li>
-            <li>Loading models and animation data using Assimp</li>
+            <li><strong>Animating intricate 3D models:</strong> Provides precise skeletal control for character movement.</li>
+            <li><strong>Blending multiple animations:</strong> Creating smooth, realistic transitions between actions.</li>
+            <li><strong>Loading models and animations using Assimp:</strong> Ensuring compatibility with widely-used 3D asset formats and animations.</li>
         </ul>
-
+        
         <h3>Physics Simulation</h3>
         <p>
-            The physics component comprises two systems: particle simulation and rigid body simulation. These
-            simulations
-            add realism and interactivity to 3D environments.
+            The <strong>physics component</strong> comprises two systems: a particle simulation and a rigid body simulation. These systems add realism and interactivity to 3D environments, enhancing the overall immersion and physicality of the virtual world.
         </p>
         <p>
-            Key features of the physics simulation:
+            Key features of the physics simulation include:
         </p>
         <ul>
-            <li>Simulating particle movement with forces and constraints</li>
-            <li>Creating particle systems connected by springs</li>
-            <li>Simulating rigid body dynamics, including spheres and boxes</li>
-            <li>Handling collision detection and resolution for spheres and boxes</li>
+            <li><strong>Simulating particle movement:</strong> With applied forces and constraints for realistic particle dynamics.</li>
+            <li><strong>Creating particle systems connected by springs:</strong> For flexible, interconnected interactions between particles.</li>
+            <li><strong>Simulating rigid body dynamics:</strong> Including spheres and boxes for more complex physics interactions.</li>
+            <li><strong>Handling collision detection and resolution:</strong> Ensuring accurate and smooth interactions between objects.</li>
         </ul>
+        
+        <p>
+            This project demonstrates the power of combining graphics rendering, animation, and physics simulation to create immersive 3D environments. Through developing a software renderer, animation system, and physics engine from scratch, I gained deep insights into each component of a 3D engine, understanding the challenges and techniques that contribute to realistic visuals and interactions. This experience has greatly enriched my skills in graphics programming and has equipped me with the tools to tackle even more complex projects in the future.
+        </p>
+        
+        
+
         <br><br>
     </div>
 </body>

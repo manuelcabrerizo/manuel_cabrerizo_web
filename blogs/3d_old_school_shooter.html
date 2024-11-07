@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/goblin.png">
     <link rel="stylesheet" href="../styles.css">
     <title>Manuel Cabrerizo</title>
 </head>
@@ -32,7 +33,7 @@
 <body>
     <div class="blog">
         <br>
-        <h2>3D Animation, Software Renderer, and Physics Simulation</h2>
+        <h2>3D Sofware/Hardware Renderer and Old Schoot Shooter Demo</h2>
 
         <div class="sample_container" id="borderimg">
             <div class="video_buttons_container">
@@ -47,7 +48,7 @@
                     <button>
                         Download Sample
                     </button>
-                    <a href="https://github.com/halfpipestudios/stardust">
+                    <a href="https://github.com/manuelcabrerizo/OldSchoolFPS">
                         <button>
                             Source Code
                         </button>
@@ -57,65 +58,33 @@
             <h4>Sample Instructions</h4>
             <ul>
                 <li>W A S D keys move player</li>
-                <li>Arrow keys applay forces to the sphere</li>
-                <li> Xbox joystick support for moving the player with the left stick</li>
+                <li>Right click down: Look arrown</li>
+                <li> Xbox joystick support </li>
+                <li> 1: change rendering in real time </li>
             </ul>
         </div>
-
-        <p>This project explores multiple advanced areas, acting as a testing ground for three main components:</p>
-
-        <h3>Software Renderer</h3>
-
-        <p>
-            I developed a software renderer from scratch as an exercise in learning. Building it from the ground up
-            allowed
-            me to understand every step involved in rendering, from drawing triangles on the screen to eventually
-            animating
-            3D models.
-        </p>
-        <p>
-            Key features of the renderer include:
-        </p>
-        <ul>
-            <li>Rendering triangles and animated models on the screen</li>
-            <li>Drawing lines and setting world, view, and projection matrices</li>
-            <li>Rendering both static and animated 3D models</li>
-            <li>Applying textures using UV coordinates</li>
-            <li>Clipping triangles outside the view frustum</li>
-            <li>Using AVX instructions for efficient triangle rasterization, painting 8 pixels at a time</li>
-        </ul>
-
-        <h3>3D Animation and Interpolation</h3>
-        <p>
-            This project also includes a skeletal animation system, which interpolates between different poses of a
-            skeleton
-            to animate a 3D model. This allows smooth transitions between animations and brings models to life.
-        </p>
-        <p>
-            Key features of the animation system:
-        </p>
-        <ul>
-            <li>Animating complex 3D models</li>
-            <li>Blending multiple animations to create smooth, realistic transitions</li>
-            <li>Loading models and animation data using Assimp</li>
-        </ul>
-
-        <h3>Physics Simulation</h3>
-        <p>
-            The physics component comprises two systems: particle simulation and rigid body simulation. These
-            simulations
-            add realism and interactivity to 3D environments.
-        </p>
-        <p>
-            Key features of the physics simulation:
-        </p>
-        <ul>
-            <li>Simulating particle movement with forces and constraints</li>
-            <li>Creating particle systems connected by springs</li>
-            <li>Simulating rigid body dynamics, including spheres and boxes</li>
-            <li>Handling collision detection and resolution for spheres and boxes</li>
-        </ul>
+        
         <br><br>
+
+        <p>This project is a shooter demo that showcases advanced rendering and game mechanics.</p>
+
+        <h3>Key Characteristics of the Project</h3>
+        <ul>
+            <li><strong>Real-time rendering:</strong> The project features two different renderers— a software renderer and a DirectX 11 renderer. This allows flexibility in rendering techniques and provides insight into both software and hardware-accelerated rendering methods.</li>
+            <li><strong>Phong lighting model:</strong> Both renderers utilize the Phong lighting model, which simulates realistic lighting interactions on 3D objects, enhancing the visual quality of the game scene.</li>
+            <li><strong>SIMD SSE2 instructions:</strong> To improve performance, the software renderer utilizes SIMD SSE2 instructions, enabling the simultaneous processing of multiple data points, resulting in faster rendering times.</li>
+            <li><strong>Multithreaded tile-based rendering:</strong> The software renderer is optimized with a multithreaded, tile-based rendering approach, allowing the processing of different sections of the screen concurrently, further improving performance.</li>
+            <li><strong>Octree-based scene management:</strong> An octree structure is used to manage the 3D scene, improving performance by efficiently organizing and retrieving objects in the scene for collision detection and rendering.</li>
+            <li><strong>Collision detection and resolution:</strong> The game features robust collision detection for AABBs (Axis-Aligned Bounding Boxes), OBBs (Oriented Bounding Boxes), capsules, and spheres. This ensures accurate interaction between game objects, with proper resolution of collisions when they occur.</li>
+            <li><strong>Integration of XAudio2:</strong> XAudio2 is used for sound integration, enabling 3D audio effects and a rich auditory experience, enhancing immersion in the game.</li>
+            <li><strong>Integration of XInput:</strong> XInput support is implemented to allow joystick input, enabling compatibility with a wide range of gaming controllers for a more flexible and enjoyable player experience.</li>
+        </ul>
+        
+        <p>Through this shooter demo project, I gained valuable insights into performance optimization techniques. By implementing SIMD instructions (SSE2) and multithreading, I was able to significantly improve the software renderer's performance. Using a tile-based renderer further boosted the efficiency of rendering, allowing for faster processing of large scenes. Additionally, the use of octrees for scene management allowed me to optimize collision detection and resolution. Overall, this project deepened my understanding of real-time performance challenges and the importance of optimizing both rendering and physics calculations to achieve smooth gameplay.</p>
+
+
+        <br><br>
+
     </div>
 </body>
 

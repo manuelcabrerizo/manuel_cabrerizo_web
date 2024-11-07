@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/goblin.png">
     <link rel="stylesheet" href="../styles.css">
     <title>Manuel Cabrerizo</title>
 </head>
@@ -64,28 +65,37 @@
 
         <br><br>
 
-        <p>This project is a 3D level editor inspired by the Hammer editor, designed to provide an intuitive and versatile tool for creating detailed 3D environments.</p>
+        <p>This project is a 3D level editor inspired by the Hammer editor, designed to provide an intuitive and versatile tool for creating detailed 3D environments. The editor combines flexibility with ease of use, allowing level designers to create, modify, and experiment with 3D worlds in an interactive and efficient way. Whether for games, simulations, or architectural visualizations, this tool aims to empower users to bring their creative ideas to life.</p>
 
         <h3>Brush-Based Level Editor</h3>
         <p>
-            This editor uses a brush-based approach, meaning that objects are created as "brushes." A brush is a convex volume formed by the intersection of multiple planes. For example, a cube is considered a brush because it can be defined by the intersection of six planes that enclose a volume.
+            The core of this editor is its <strong>brush-based approach</strong>, where 3D objects are constructed as "brushes." A brush is essentially a convex volume defined by the intersection of multiple planes. For example, a cube is considered a brush because it can be described by six planes that enclose a rectangular volume. This method allows for a modular, highly flexible approach to 3D object creation.
         </p>
         <p>
-            The brush-based system allows for greater flexibility and precision when creating and manipulating 3D geometry, making it ideal for level design in games or simulations.
+            The brush-based system gives users the freedom to build levels by combining simple geometric shapes into more complex structures, offering a fast way to create environments. Additionally, the system supports precision, as brushes can be manipulated and clipped in various ways, making it ideal for creating intricate 3D worlds.
         </p>
         <p>
             Key features of the editor include:
         </p>
         <ul>
-            <li>Add and remove brushes to build or modify the 3D environment</li>
-            <li>Apply and remove textures to customize the appearance of each brush</li>
-            <li>Paint individual brushes with different textures for visual variety and depth</li>
-            <li>Clip brushes to create more complex shapes and architectural details</li>
-            <li>Save and load scenes or models as binary files for easy editing and reuse</li>
-            <li>Multiple viewports (top, front, and side) to aid in precise positioning and alignment of brushes</li>
+            <li><strong>Add and remove brushes:</strong> This feature enables users to easily build or modify the 3D environment by adding or removing geometric elements. Each brush represents a specific piece of geometry, such as a wall, floor, or any other structure, and can be positioned and adjusted to create diverse environments.</li>
+            <li><strong>Apply and remove textures:</strong> The ability to apply textures to brushes allows for aesthetic customization. Users can change the look of objects, creating realistic surfaces or stylized effects. Textures can be easily added or removed to suit different design requirements, enabling rapid iteration and experimentation.</li>
+            <li><strong>Clip brushes:</strong> This feature allows users to clip brushes, cutting them into more complex shapes. Clipping makes it possible to design highly detailed structures and terrain features, such as windows, doors, or irregularly shaped rooms. The brush clipping functionality gives the editor its power, enabling designers to create everything from simple objects to intricate geometric configurations.</li>
+            <li><strong>Save and load scenes or models:</strong> The editor allows users to save and load entire scenes or individual models in binary format. This feature simplifies the editing process, as designers can store and recall their work quickly, facilitating collaboration and version control. Scenes can be saved for later editing or exported to be used in other software or engines.</li>
+            <li><strong>Multiple viewports (top, front, and side):</strong> This feature offers different perspectives on the scene, making it easier to position and align brushes precisely. By switching between top, front, and side viewports, users can get a clearer idea of the geometry they are working with, ensuring greater accuracy when creating and modifying the environment.</li>
         </ul>
         
+        <p>
+            Developing this 3D level editor has been an invaluable learning experience. I gained a deeper understanding of 3D geometry, game development, and scene management by implementing a brush-based system. This approach allowed me to explore the intersection of planes to create flexible and precise 3D objects for level design.
+        </p>
+        <p>
+            I also learned how to optimize performance by implementing binary file saving/loading and how to manage multiple viewports to improve editing efficiency. These challenges enhanced my technical skills and problem-solving abilities, preparing me for more complex game development tasks in the future.
+        </p>
+        
+        
 
+        
+    
         <br><br>
     </div>
 </body>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/goblin.png">
     <link rel="stylesheet" href="../styles.css">
     <title>Manuel Cabrerizo</title>
 </head>
@@ -64,27 +65,41 @@
         <br><br>
 
         <p>
-            This project involves research on the use of BSP (Binary Space Partitioning) trees for collision detection and resolution. It was inspired by the BSP chapter in *Real-Time Collision Detection* by Christer Ericson.
+            This project focuses on the application of Binary Space Partitioning (BSP) trees for efficient collision detection and resolution. Inspired by the BSP chapter in *Real-Time Collision Detection* by Christer Ericson, it explores how geometric data in the form of convex volumes can be leveraged for both detecting and resolving collisions in a 3D environment.
         </p>
-
+        
         <h3>Why Use Solid Leaf BSP</h3>
-
+        
         <p>
-            By using solid leaf BSP trees, we can determine whether a point in space is inside or outside a given geometry. To make this work, however, certain conditions must be met. First, we need to construct the BSP tree based on the geometry. For this, the geometry or level must be in a format compatible with BSP tree structures. The Hammer editor provides geometry in this format, which I used for this project. Additionally, <a href="3d_brush_base_level_editor.html">my own editor</a> produces geometry in a compatible format. This format is based on planes, with each object in the level represented as a convex volume formed by the intersection of planes.
+            Solid leaf BSP trees allow for efficient spatial partitioning, enabling us to determine whether a point in space is inside or outside a given geometry. To use BSP trees effectively, the geometry needs to be represented in a compatible format. In this project, geometry from the Hammer editor was used, which provides a format based on planes, with each object being a convex volume formed by the intersection of these planes. Additionally, <a href="3d_brush_base_level_editor.html">my own level editor</a> produces geometry in the same plane-based format.
         </p>
+        
         <p>
-            With these planes, we can construct a BSP tree and use it to check for collisions within the level. Since we have detailed information about the planes defining each object, the BSP tree also aids in collision resolution. For example, when a collision with a wall is detected, we already know the specific plane that forms the wall, allowing us to access the contact normal immediately. This significantly improves the accuracy and efficiency of collision handling.
+            The BSP tree construction process is crucial because it organizes these planes into a hierarchical structure that makes collision detection more efficient. Once the BSP tree is built, it can quickly determine if a point, such as the center of a 3D object, intersects with any of the geometry in the level. This ability to quickly narrow down potential collisions is what makes BSP trees particularly useful in real-time environments.
         </p>
-
+        
+        <p>
+            Another key advantage of using BSP trees is their effectiveness in collision resolution. Since the geometry is defined by planes, the BSP tree allows us to instantly access the contact normal during a collision. This is particularly important for accurate and efficient collision resolution, as the plane data provides the necessary information to handle the interaction between objects.
+        </p>
+        
         <p>
             Key features of the project include:
         </p>
         <ul>
-            <li>Basic parser for Hammer files to extract geometric data</li>
-            <li>Construction of solid leaf BSP trees</li>
-            <li>Collision detection between a box and the solid leaf BSP tree</li>
-            <li>Efficient collision resolution utilizing plane data for accurate contact normals</li>
+            <li><strong>Hammer file parser:</strong> A basic parser to extract geometric data from Hammer files, ensuring compatibility with BSP tree construction.</li>
+            <li><strong>Solid leaf BSP tree construction:</strong> Building BSP trees from convex volumes represented by the intersection of planes.</li>
+            <li><strong>Collision detection:</strong> Efficient detection of collisions by using the BSP tree to identify potential interactions with the environment.</li>
+            <li><strong>Collision resolution:</strong> Utilizing plane data from the BSP tree to resolve collisions with precise contact normals.</li>
         </ul>
+        
+        <p>
+            This project has been a valuable learning experience in spatial partitioning and real-time collision handling. Working with BSP trees allowed me to understand their role in efficiently managing complex 3D environments. I now appreciate how these trees can speed up both collision detection and resolution by organizing geometry and providing access to vital data, such as contact normals, for resolving collisions.
+        </p>
+        <p>
+            The project also deepened my knowledge of game development techniques, particularly in the context of physics simulations. Moving forward, I plan to incorporate these concepts into more advanced simulations and game engines, leveraging BSP trees for greater performance and accuracy in collision handling.
+        </p>
+        
+        
 
         <br><br>
     </div>

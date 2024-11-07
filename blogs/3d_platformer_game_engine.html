@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/goblin.png">
     <link rel="stylesheet" href="../styles.css">
     <title>Manuel Cabrerizo</title>
 </head>
@@ -72,23 +73,47 @@
         <h3>3D Platformer Engine</h3>
 
         <p>
-            I developed a software renderer from scratch as an exercise in learning. Building it from the ground up
-            allowed
-            me to understand every step involved in rendering, from drawing triangles on the screen to eventually
-            animating
-            3D models.
+            This project was a collaborative effort between my brother and me. Together, we developed a 3D game engine designed specifically for creating simple 3D platformer games. Our goal was to build a powerful yet accessible toolset that would streamline the game development process, offering essential rendering, physics, audio, and input features. The project allowed us to deepen our understanding of game engine architecture, graphics rendering, and real-time systems while tackling the unique challenges of 3D platformer gameplay.
         </p>
+        
         <p>
-            Key features of the renderer include:
+            Key characteristics and features of the project include:
         </p>
         <ul>
-            <li>Rendering triangles and animated models on the screen</li>
-            <li>Drawing lines and setting world, view, and projection matrices</li>
-            <li>Rendering both static and animated 3D models</li>
-            <li>Applying textures using UV coordinates</li>
-            <li>Clipping triangles outside the view frustum</li>
-            <li>Using AVX instructions for efficient triangle rasterization, painting 8 pixels at a time</li>
+            <li><strong>DirectX11 Renderer:</strong> Built using DirectX11, the engine provides efficient rendering capabilities, allowing for high-performance graphics suitable for 3D platformers.</li>
+            
+            <li><strong>Simple Phong Lighting Model:</strong> Implements the classic Phong lighting model to achieve realistic lighting and shading effects, enhancing the depth and detail of the 3D environment.</li>
+            
+            <li><strong>Shadow Maps for Static Shadows:</strong> Uses shadow mapping techniques to cast shadows for static objects, adding realism to scenes while minimizing performance impact.</li>
+            
+            <li><strong>Geometry Shader-Based Particle System:</strong> Leverages geometry shaders to create a flexible and visually appealing particle system, perfect for adding effects such as smoke, fire, or sparkles to the game environment.</li>
+            
+            <li><strong>Map Loader:</strong> Includes a map loader that allows the engine to load level maps created in our <a href="3d_brush_base_level_editor.html">3D Brush-Based Level Editor</a>. This enables users to design and test game levels directly within the engine.</li>
+            
+            <li><strong>Custom Model and Animation Data Loader:</strong> Provides a custom loader for 3D models and animations, giving flexibility in asset import and management.</li>
+            
+            <li><strong>Animation System:</strong> A robust animation system supports skeletal animation, allowing characters and objects to move realistically, essential for character-based platformers.</li>
+            
+            <li><strong>Entity-Component System (ECS):</strong> Implements an ECS architecture, which enhances flexibility in object management, making it easy to add, remove, or modify game entities and their behaviors.</li>
+            
+            <li><strong>Integration with XAudio2 for 3D Audio:</strong> Uses XAudio2 to incorporate spatialized 3D audio, allowing sound effects and background music to respond dynamically to player movements, creating an immersive audio experience.</li>
+            
+            <li><strong>Keyboard, Mouse, and Joystick Input Support:</strong> Supports multiple input methods, including keyboard, mouse, and joystick, for versatile and responsive player control.</li>
+            
+            <li><strong>Collision Detection with GJK:</strong> Utilizes the Gilbert-Johnson-Keerthi (GJK) algorithm for collision detection. Since our levels are created with convex geometry, the GJK algorithm can be efficiently applied to detect collisions between objects and the environment. This approach improves the performance and accuracy of collision detection in our platformer game, ensuring smooth and responsive interactions between the player and the game world.</li>
+            
+            <li><strong>Collision Resolution with EPA:</strong> Implements the Expanding Polytope Algorithm (EPA) for collision resolution as an extension of the GJK algorithm. Once a collision is detected, EPA calculates the penetration depth and contact points, allowing for accurate and realistic collision responses. This enhances the game’s physics, ensuring that objects interact naturally upon impact with the environment.</li>
+            
+            <li><strong>In-Game Editor:</strong> A built-in editor that allows developers to modify game objects, adjust properties, and test changes in real-time directly within the engine.</li>
+            
+            <li><strong>Custom UI Library for the Editor:</strong> Features a custom-built UI library, tailored for the in-game editor, offering intuitive controls and easy navigation to streamline the game development process.</li>
         </ul>
+        
+        <p>
+            This project was a challenging and rewarding experience, combining elements of graphics programming, physics, and real-time interaction. Through our collaboration, we were able to create a fully functional 3D engine that provides both the power and flexibility needed for 3D platformer game development. The engine stands as a testament to our shared dedication and interest in game development, and it has significantly advanced our technical skills and understanding of game engine design.
+        </p>
+        
+        
 
         <br><br>
 

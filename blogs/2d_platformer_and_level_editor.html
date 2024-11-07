@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/goblin.png">
     <link rel="stylesheet" href="../styles.css">
     <title>Manuel Cabrerizo</title>
 </head>
@@ -32,7 +33,7 @@
 <body>
     <div class="blog">
         <br>
-        <h2>3D Animation, Software Renderer, and Physics Simulation</h2>
+        <h2>2D Platformer and Level Editor</h2>
 
         <div class="sample_container" id="borderimg">
             <div class="video_buttons_container">
@@ -47,7 +48,7 @@
                     <button>
                         Download Sample
                     </button>
-                    <a href="https://github.com/halfpipestudios/stardust">
+                    <a href="https://github.com/manuelcabrerizo/TMEngine">
                         <button>
                             Source Code
                         </button>
@@ -56,65 +57,35 @@
             </div>
             <h4>Sample Instructions</h4>
             <ul>
-                <li>W A S D keys move player</li>
-                <li>Arrow keys applay forces to the sphere</li>
-                <li> Xbox joystick support for moving the player with the left stick</li>
+                <li>A  D keys move player</li>
+                <li>Space Jump</li>
             </ul>
         </div>
 
-        <p>This project explores multiple advanced areas, acting as a testing ground for three main components:</p>
+        <br><br>
 
-        <h3>Software Renderer</h3>
+        <p>This demo features a 2D level editor and a 2D platformer game designed for testing and playing levels created within the editor. The goal of this project was to develop a simple yet powerful tool for level creation and to ensure that the levels could be tested seamlessly within a playable environment.</p>
 
-        <p>
-            I developed a software renderer from scratch as an exercise in learning. Building it from the ground up
-            allowed
-            me to understand every step involved in rendering, from drawing triangles on the screen to eventually
-            animating
-            3D models.
-        </p>
-        <p>
-            Key features of the renderer include:
-        </p>
+        <h3>Key Features of the Editor</h3>
         <ul>
-            <li>Rendering triangles and animated models on the screen</li>
-            <li>Drawing lines and setting world, view, and projection matrices</li>
-            <li>Rendering both static and animated 3D models</li>
-            <li>Applying textures using UV coordinates</li>
-            <li>Clipping triangles outside the view frustum</li>
-            <li>Using AVX instructions for efficient triangle rasterization, painting 8 pixels at a time</li>
+            <li><strong>Add and remove sprites:</strong> The editor allows you to add and remove 2D sprites to populate the game levels. Sprites are the core visual components of the game world, and this feature gives you the flexibility to design environments with various elements such as characters, objects, or obstacles.</li>
+            <li><strong>Add and remove game entities:</strong> Beyond sprites, you can also add or remove game entities that represent interactive or dynamic objects within the game world, such as characters, platforms, or triggers. This allows for the creation of a full-fledged game environment.</li>
+            <li><strong>Add and remove lights:</strong> Lighting plays a crucial role in setting the atmosphere and enhancing the visual appeal of a game. The editor allows you to place lights in your levels, adjusting their color, intensity, and range to create dynamic lighting effects.</li>
+            <li><strong>Custom JSON parser:</strong> The custom JSON parser lets you save and load game levels in a structured and efficient format. This system makes it easy to store the data for the levels, including all entities, sprites, lights, and properties, so they can be reloaded and modified later. It also simplifies sharing and reusing level data across projects.</li>
+        </ul>
+        
+        <h3>Key Features of the Game</h3>
+        <ul>
+            <li><strong>DirectX 11 for the Windows version:</strong> The game uses DirectX 11 for optimal graphics performance and support for advanced rendering techniques on Windows platforms. This allows the game to run smoothly with modern hardware and takes advantage of DirectX features such as hardware-accelerated rendering and improved visual effects.</li>
+            <li><strong>OpenGL for the macOS version:</strong> For macOS users, the game utilizes OpenGL for rendering, ensuring cross-platform compatibility while maintaining high performance. OpenGL provides a robust graphics API, ensuring the game runs well on Apple devices.</li>
+            <li><strong>Custom collision detection:</strong> The game includes a custom collision detection system that handles interactions between basic shapes such as circles, boxes, and capsules. This allows for accurate detection of collisions between the player and the environment, ensuring smooth gameplay.</li>
+            <li><strong>Custom resolution detection:</strong> After detecting a collision, the game applies custom resolution techniques to prevent objects from overlapping. This system ensures that objects respond realistically when colliding with each other, whether they bounce off, slide, or stop based on the situation.</li>
+            <li><strong>Sprite animations:</strong> The game supports sprite animations, allowing characters and objects to move and interact in visually dynamic ways. This feature makes the game world feel more alive by enabling movement and transitions, such as walking, jumping, or attacking animations.</li>
+            <li><strong>Level loader:</strong> The level loader allows the game to load levels that were created in the editor. This feature ensures that the editor and game are seamlessly integrated, and it lets you test and play any level you create directly in the game environment.</li>
         </ul>
 
-        <h3>3D Animation and Interpolation</h3>
-        <p>
-            This project also includes a skeletal animation system, which interpolates between different poses of a
-            skeleton
-            to animate a 3D model. This allows smooth transitions between animations and brings models to life.
-        </p>
-        <p>
-            Key features of the animation system:
-        </p>
-        <ul>
-            <li>Animating complex 3D models</li>
-            <li>Blending multiple animations to create smooth, realistic transitions</li>
-            <li>Loading models and animation data using Assimp</li>
-        </ul>
-
-        <h3>Physics Simulation</h3>
-        <p>
-            The physics component comprises two systems: particle simulation and rigid body simulation. These
-            simulations
-            add realism and interactivity to 3D environments.
-        </p>
-        <p>
-            Key features of the physics simulation:
-        </p>
-        <ul>
-            <li>Simulating particle movement with forces and constraints</li>
-            <li>Creating particle systems connected by springs</li>
-            <li>Simulating rigid body dynamics, including spheres and boxes</li>
-            <li>Handling collision detection and resolution for spheres and boxes</li>
-        </ul>
+        <p>This project helped me improve my skills in game development, including collision detection and resolution. I learned how to create a functional editor and integrate it with a game engine, gaining a deeper understanding of how these components work together.</p>
+                
         <br><br>
     </div>
 </body>

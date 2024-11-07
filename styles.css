@@ -153,21 +153,21 @@ footer {
 }
 
 .blog p {
-    text-align: justify; /* Justifica el texto en los párrafos, encabezados y listas */
+    text-align: justify;
 }
 
 .blog h2 {
-    text-align: center; /* Justifica el texto en los párrafos, encabezados y listas */
+    text-align: center;
     color: plum;
 }
 
 .blog h3 {
-    text-align: justify; /* Justifica el texto en los párrafos, encabezados y listas */
+    text-align: justify;
     color: plum;
 }
 
 .blog ul {
-    text-align: justify; /* Justifica el texto en los párrafos, encabezados y listas */
+    text-align: justify;
 }
 
 .sample_container {
@@ -180,3 +180,11 @@ footer {
     margin-top: 24px;
 }
 
+.project a {
+    text-decoration: none;
+    color:lavenderblush;
+}
+
+ul strong {
+    color: lightgreen;
+}
