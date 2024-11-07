@@ -146,3 +146,37 @@ footer {
     width: 400px;
     padding-bottom: 24px;
 }
+
+.blog {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.blog p {
+    text-align: justify; /* Justifica el texto en los párrafos, encabezados y listas */
+}
+
+.blog h2 {
+    text-align: center; /* Justifica el texto en los párrafos, encabezados y listas */
+    color: plum;
+}
+
+.blog h3 {
+    text-align: justify; /* Justifica el texto en los párrafos, encabezados y listas */
+    color: plum;
+}
+
+.blog ul {
+    text-align: justify; /* Justifica el texto en los párrafos, encabezados y listas */
+}
+
+.sample_container {
+    background-color: #020061;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.video_buttons_container {
+    margin-top: 24px;
+}
+

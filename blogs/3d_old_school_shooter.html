@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Manuel Cabrerizo</title>
+</head>
+
+<header>
+    <div class="header_img"></div>
+    <div class="menu">
+        <a href="../index.html">
+            <button class="menu_button"> Home </button>
+        </a>
+        <a href="../c_cpp_graphics_api.html">
+            <button class="menu_button"> C / C++ / Graphics Api </button>
+        </a>
+        <a href="../csharp_unity.html">
+            <button class="menu_button"> C# / Unity </button>
+        </a>
+        <a href="../shaders.html">
+            <button class="menu_button"> Shaders </button>
+        </a>
+        <a href="../contact_me.html">
+            <button class="menu_button"> Contact Me </button>
+        </a>
+    </div>
+</header>
+
+<body>
+    <div class="blog">
+        <br>
+        <h2>3D Animation, Software Renderer, and Physics Simulation</h2>
+
+        <div class="sample_container" id="borderimg">
+            <div class="video_buttons_container">
+                <div class="sample_video">
+                    <iframe id="borderimg" width="560" height="315" src="https://www.youtube.com/embed/yR1fwNDfC8k?si=V6rN4mxYzCYiXC3X"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="sample_buttons">
+                    <button>
+                        Download Sample
+                    </button>
+                    <a href="https://github.com/halfpipestudios/stardust">
+                        <button>
+                            Source Code
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <h4>Sample Instructions</h4>
+            <ul>
+                <li>W A S D keys move player</li>
+                <li>Arrow keys applay forces to the sphere</li>
+                <li> Xbox joystick support for moving the player with the left stick</li>
+            </ul>
+        </div>
+
+        <p>This project explores multiple advanced areas, acting as a testing ground for three main components:</p>
+
+        <h3>Software Renderer</h3>
+
+        <p>
+            I developed a software renderer from scratch as an exercise in learning. Building it from the ground up
+            allowed
+            me to understand every step involved in rendering, from drawing triangles on the screen to eventually
+            animating
+            3D models.
+        </p>
+        <p>
+            Key features of the renderer include:
+        </p>
+        <ul>
+            <li>Rendering triangles and animated models on the screen</li>
+            <li>Drawing lines and setting world, view, and projection matrices</li>
+            <li>Rendering both static and animated 3D models</li>
+            <li>Applying textures using UV coordinates</li>
+            <li>Clipping triangles outside the view frustum</li>
+            <li>Using AVX instructions for efficient triangle rasterization, painting 8 pixels at a time</li>
+        </ul>
+
+        <h3>3D Animation and Interpolation</h3>
+        <p>
+            This project also includes a skeletal animation system, which interpolates between different poses of a
+            skeleton
+            to animate a 3D model. This allows smooth transitions between animations and brings models to life.
+        </p>
+        <p>
+            Key features of the animation system:
+        </p>
+        <ul>
+            <li>Animating complex 3D models</li>
+            <li>Blending multiple animations to create smooth, realistic transitions</li>
+            <li>Loading models and animation data using Assimp</li>
+        </ul>
+
+        <h3>Physics Simulation</h3>
+        <p>
+            The physics component comprises two systems: particle simulation and rigid body simulation. These
+            simulations
+            add realism and interactivity to 3D environments.
+        </p>
+        <p>
+            Key features of the physics simulation:
+        </p>
+        <ul>
+            <li>Simulating particle movement with forces and constraints</li>
+            <li>Creating particle systems connected by springs</li>
+            <li>Simulating rigid body dynamics, including spheres and boxes</li>
+            <li>Handling collision detection and resolution for spheres and boxes</li>
+        </ul>
+        <br><br>
+    </div>
+</body>
+
+
+<footer>
+    <div class="footer_message">
+        <a href="https://halfpipe.dev/">Hosted by halfpipe.dev </a>
+    </div>
+</footer>
+
+</html>

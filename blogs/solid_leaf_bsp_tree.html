@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Manuel Cabrerizo</title>
+</head>
+
+<header>
+    <div class="header_img"></div>
+    <div class="menu">
+        <a href="../index.html">
+            <button class="menu_button"> Home </button>
+        </a>
+        <a href="../c_cpp_graphics_api.html">
+            <button class="menu_button"> C / C++ / Graphics Api </button>
+        </a>
+        <a href="../csharp_unity.html">
+            <button class="menu_button"> C# / Unity </button>
+        </a>
+        <a href="../shaders.html">
+            <button class="menu_button"> Shaders </button>
+        </a>
+        <a href="../contact_me.html">
+            <button class="menu_button"> Contact Me </button>
+        </a>
+    </div>
+</header>
+
+<body>
+    <div class="blog">
+        <br>
+        <h2>Solid leaf BSP tree for collision detection and resolution</h2>
+
+        <div class="sample_container" id="borderimg">
+            <div class="video_buttons_container">
+                <div class="sample_video">
+                    <iframe id="borderimg" width="560" height="315" src="https://www.youtube.com/embed/2bfW9un4Aec?si=j90Fd-xEDPa3-MnF"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="sample_buttons">
+                    <button>
+                        Download Sample
+                    </button>
+                    <a href="https://github.com/manuelcabrerizo/bsp_csg">
+                        <button>
+                            Source Code
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <h4>Sample Instructions</h4>
+            <ul>
+                <li>W A S D keys move player</li>
+                <li>Space: jump</li>
+            </ul>
+        </div>
+
+        <br><br>
+
+        <p>
+            This project involves research on the use of BSP (Binary Space Partitioning) trees for collision detection and resolution. It was inspired by the BSP chapter in *Real-Time Collision Detection* by Christer Ericson.
+        </p>
+
+        <h3>Why Use Solid Leaf BSP</h3>
+
+        <p>
+            By using solid leaf BSP trees, we can determine whether a point in space is inside or outside a given geometry. To make this work, however, certain conditions must be met. First, we need to construct the BSP tree based on the geometry. For this, the geometry or level must be in a format compatible with BSP tree structures. The Hammer editor provides geometry in this format, which I used for this project. Additionally, <a href="3d_brush_base_level_editor.html">my own editor</a> produces geometry in a compatible format. This format is based on planes, with each object in the level represented as a convex volume formed by the intersection of planes.
+        </p>
+        <p>
+            With these planes, we can construct a BSP tree and use it to check for collisions within the level. Since we have detailed information about the planes defining each object, the BSP tree also aids in collision resolution. For example, when a collision with a wall is detected, we already know the specific plane that forms the wall, allowing us to access the contact normal immediately. This significantly improves the accuracy and efficiency of collision handling.
+        </p>
+
+        <p>
+            Key features of the project include:
+        </p>
+        <ul>
+            <li>Basic parser for Hammer files to extract geometric data</li>
+            <li>Construction of solid leaf BSP trees</li>
+            <li>Collision detection between a box and the solid leaf BSP tree</li>
+            <li>Efficient collision resolution utilizing plane data for accurate contact normals</li>
+        </ul>
+
+        <br><br>
+    </div>
+</body>
+
+
+<footer>
+    <div class="footer_message">
+        <a href="https://halfpipe.dev/">Hosted by halfpipe.dev </a>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Manuel Cabrerizo</title>
+</head>
+
+<header>
+    <div class="header_img"></div>
+    <div class="menu">
+        <a href="../index.html">
+            <button class="menu_button"> Home </button>
+        </a>
+        <a href="../c_cpp_graphics_api.html">
+            <button class="menu_button"> C / C++ / Graphics Api </button>
+        </a>
+        <a href="../csharp_unity.html">
+            <button class="menu_button"> C# / Unity </button>
+        </a>
+        <a href="../shaders.html">
+            <button class="menu_button"> Shaders </button>
+        </a>
+        <a href="../contact_me.html">
+            <button class="menu_button"> Contact Me </button>
+        </a>
+    </div>
+</header>
+
+<body>
+    <div class="blog">
+        <br>
+        <h2>3D Brush base Level editor</h2>
+
+        <div class="sample_container" id="borderimg">
+            <div class="video_buttons_container">
+                <div class="sample_video">
+                    <iframe id="borderimg" width="560" height="315" src="https://www.youtube.com/embed/1wj0_PXOh5Q?si=uogW3yJND19aZGW-"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="sample_buttons">
+                    <button>
+                        Download Sample
+                    </button>
+                    <a href="https://github.com/manuelcabrerizo/MapEditor">
+                        <button>
+                            Source Code
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <h4>Sample Instructions</h4>
+            <ul>
+                <li> Left click: look arrown </li>
+                <li> Right click: pan in the camera plane </li>
+                <li> Scroll Wheel: move foward or backward </li>
+            </ul>
+        </div>
+
+        <br><br>
+
+        <p>This project is a 3D level editor inspired by the Hammer editor, designed to provide an intuitive and versatile tool for creating detailed 3D environments.</p>
+
+        <h3>Brush-Based Level Editor</h3>
+        <p>
+            This editor uses a brush-based approach, meaning that objects are created as "brushes." A brush is a convex volume formed by the intersection of multiple planes. For example, a cube is considered a brush because it can be defined by the intersection of six planes that enclose a volume.
+        </p>
+        <p>
+            The brush-based system allows for greater flexibility and precision when creating and manipulating 3D geometry, making it ideal for level design in games or simulations.
+        </p>
+        <p>
+            Key features of the editor include:
+        </p>
+        <ul>
+            <li>Add and remove brushes to build or modify the 3D environment</li>
+            <li>Apply and remove textures to customize the appearance of each brush</li>
+            <li>Paint individual brushes with different textures for visual variety and depth</li>
+            <li>Clip brushes to create more complex shapes and architectural details</li>
+            <li>Save and load scenes or models as binary files for easy editing and reuse</li>
+            <li>Multiple viewports (top, front, and side) to aid in precise positioning and alignment of brushes</li>
+        </ul>
+        
+
+        <br><br>
+    </div>
+</body>
+
+
+<footer>
+    <div class="footer_message">
+        <a href="https://halfpipe.dev/">Hosted by halfpipe.dev </a>
+    </div>
+</footer>
+
+</html>

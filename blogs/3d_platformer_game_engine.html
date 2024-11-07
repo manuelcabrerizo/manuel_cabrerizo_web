@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Manuel Cabrerizo</title>
+</head>
+
+<header>
+    <div class="header_img"></div>
+    <div class="menu">
+        <a href="../index.html">
+            <button class="menu_button"> Home </button>
+        </a>
+        <a href="../c_cpp_graphics_api.html">
+            <button class="menu_button"> C / C++ / Graphics Api </button>
+        </a>
+        <a href="../csharp_unity.html">
+            <button class="menu_button"> C# / Unity </button>
+        </a>
+        <a href="../shaders.html">
+            <button class="menu_button"> Shaders </button>
+        </a>
+        <a href="../contact_me.html">
+            <button class="menu_button"> Contact Me </button>
+        </a>
+    </div>
+</header>
+
+<body>
+    <div class="blog">
+        <br>
+        <h2>3D Platformer Game Engine</h2>
+
+        <div class="sample_container" id="borderimg">
+            <div class="video_buttons_container">
+                <div class="sample_video">
+                    <iframe id="borderimg" width="560" height="315" src="https://www.youtube.com/embed/tmnevb-V4kA?si=ZJCIEG6BfA1K7l5n"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="sample_buttons">
+                    <button>
+                        Download Sample
+                    </button>
+                    <a href="https://github.com/halfpipestudios/pipe">
+                        <button>
+                            Source Code
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <h4>Sample Instructions</h4>
+            <ul>
+                <li>W A S D : move player</li>
+                <li>Space: Jump</li>
+                <li>K: Shoot</li>
+                <li>Left Click: Gravity Spell</li>
+                <li>Tab: Open in Game Editor</li>
+                <li>Xbox joystick support</li>
+            </ul>
+        </div>
+
+        <br><br>
+
+        <p></p>
+
+        <h3>Software Renderer</h3>
+
+        <p>
+            I developed a software renderer from scratch as an exercise in learning. Building it from the ground up
+            allowed
+            me to understand every step involved in rendering, from drawing triangles on the screen to eventually
+            animating
+            3D models.
+        </p>
+        <p>
+            Key features of the renderer include:
+        </p>
+        <ul>
+            <li>Rendering triangles and animated models on the screen</li>
+            <li>Drawing lines and setting world, view, and projection matrices</li>
+            <li>Rendering both static and animated 3D models</li>
+            <li>Applying textures using UV coordinates</li>
+            <li>Clipping triangles outside the view frustum</li>
+            <li>Using AVX instructions for efficient triangle rasterization, painting 8 pixels at a time</li>
+        </ul>
+
+        <br><br>
+
+    </div>
+</body>
+
+
+<footer>
+    <div class="footer_message">
+        <a href="https://halfpipe.dev/">Hosted by halfpipe.dev </a>
+    </div>
+</footer>
+
+</html>
